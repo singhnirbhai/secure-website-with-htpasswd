@@ -20,8 +20,8 @@ htpasswd -c /etc/httpd/.htpasswd username
 vi /etc/httpd/conf.d/httpd.conf
 ```
 
-Copy the full entry form (<Directory) and paste inside file :
- ##  <Directory "/var/www/html">
+Copy the full entry form and paste inside the httpd.conf file :
+ 
     <Directory  "/var/www/html">  
     AuthType Basic
     AuthName "Protected Directory"
