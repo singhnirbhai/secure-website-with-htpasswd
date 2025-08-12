@@ -27,9 +27,7 @@ Copy the full entry form (<Directory) and paste inside file :
     AuthUserFile /etc/httpd/.htpasswd
     Require valid-user
     AllowOverride All
-  </Directory>
-
-  ## end
+ ## </Directory>
 
 ## Step 4: Set Proper File Permissions:
 
