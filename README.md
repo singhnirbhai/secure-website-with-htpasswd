@@ -22,11 +22,13 @@ vi /etc/httpd/conf.d/httpd.conf
 
 Copy the full entry form (<Directory) and paste inside file :
  ##  <Directory "/var/www/html">
+    <Directory  "/var/www/html">  
     AuthType Basic
     AuthName "Protected Directory"
     AuthUserFile /etc/httpd/.htpasswd
     Require valid-user
-    AllowOverride All
+    AllowOverride All 
+    </Directory>
  ## </Directory>
 
 ## Step 4: Set Proper File Permissions:
